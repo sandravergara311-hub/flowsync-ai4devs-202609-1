@@ -22,14 +22,39 @@ Borra el ejemplo de abajo cuando escribas el primero.
 
 ## Prompt 1
 
-**Modelo:** Opus 1M xHigh
-**Herramienta:** Claude Code
+**Modelo:** Auto
+**Herramienta:** Cursor
 
 ```
-Este es el ejemplo. Bórralo.
-
-El prompt va aquí dentro, entero y con sus saltos de línea,
-para que se sepa dónde empieza y dónde acaba.
+Lee el requisito 'Lo que cada tarea muestra de su responsable' en openspec/specs/tasks/spec.md y revisa los tests funcionales en backend/tests/functional/tasks/. Genera la tabla de trazabilidad mapeando cada scenario contra su test correspondiente.
 ```
 
-**Qué salió:** (opcional, una línea) funcionó a la primera / tuve que insistir / me inventó una ruta que no existe.
+**Qué salió:** Funcionó a la primera pero no encontró los test en la carpeta que le dije.
+
+---
+
+## Prompt 2
+
+**Modelo:** Auto
+**Herramienta:** Cursor
+
+```
+Lee el requisito 'Lo que cada tarea muestra de su responsable' en openspec/specs/tasks/spec.md y revisa los tests funcionales en backend/tests/functional/. Genera la tabla de trazabilidad mapeando cada scenario contra su test correspondiente.
+```
+
+**Qué salió:** Funcionó a la primera pero no encontró los test en la carpeta que le dije.
+
+---
+
+## Prompt 3
+
+**Modelo:** Auto
+**Herramienta:** Cursor
+
+```
+Genera los 3 tests funcionales que faltan para el requisito 'Lo que cada tarea muestra de su responsable' en backend/tests/functional/tasks/. Involucra los escenarios: Responsable identificable, La tarea no filtra datos de cuenta, y Responsable sin nombre. Sigue la misma estructura y estilo de los tests de backend/tests/functional/auth/.
+```
+
+**Qué salió:** Se demoró unos 5 minutos pero ejecutó los tres tests y pasaron.
+
+
