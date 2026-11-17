@@ -23,4 +23,4 @@ Un dato personal o un secreto de este proyecto que el hook NO puede cazar, y por
 
 De qué dudaste, o qué no pudiste comprobar.
 
-- El hook corre antes de que el comando se ejecute, así que un add y un commit en la misma línea todavía no han preparado el índice, y un `.env` ignorado solo aparece si ese add lo fuerza; además, sin `jq` en el PATH el script sale con código 2 y corta cualquier commit.
+- El hook corre antes de que el comando se ejecute, así que un add y un commit en la misma línea todavía no han preparado el índice, y un `.env` ignorado solo aparece si ese add lo fuerza; además, sin `jq` en el PATH el script sale con código 2 y corta cualquier committ.
