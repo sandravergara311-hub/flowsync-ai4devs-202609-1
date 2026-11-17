@@ -16,20 +16,26 @@ distinto, y sin este archivo no se distinguen.
 - Incluye también los que **no funcionaron**. Suelen ser los más útiles de leer.
 - `Modelo` y `Herramienta` en todos. Si cambiaste de una a otra a mitad, se nota aquí.
 
-Borra el ejemplo de abajo cuando escribas el primero.
-
 ---
 
 ## Prompt 1
 
-**Modelo:** Opus 1M xHigh
-**Herramienta:** Claude Code
+**Modelo:** Grok 4.7
+**Herramienta:** Cursor
 
 ```
-Este es el ejemplo. Bórralo.
-
-El prompt va aquí dentro, entero y con sus saltos de línea,
-para que se sepa dónde empieza y dónde acaba.
+Añade a la capability tasks el endpoint DELETE /api/v1/tasks/:id, que borra una tarea y devuelve 204 sin cuerpo. Impleméntalo en el controlador que ya existe y declara su ruta junto a las demás de tasks.
 ```
 
-**Qué salió:** (opcional, una línea) funcionó a la primera / tuve que insistir / me inventó una ruta que no existe.
+**Qué salió:** funcionó a la primera: `DELETE /api/v1/tasks/:id` en el controlador que ya existía, 204 sin cuerpo, README y OpenAPI al día.
+
+## Prompt 2
+
+**Modelo:** Grok 4.7
+**Herramienta:** Cursor
+
+```
+De ahora en adelante todos los prompts que te pase en el archivo @prompts.md con el esquema de ejemplo que ponen dentro del achivo
+```
+
+**Qué salió:** a partir de aquí cada prompt queda anotado en este archivo, tal cual y en orden.
